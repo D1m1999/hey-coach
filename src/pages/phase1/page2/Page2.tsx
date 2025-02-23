@@ -12,7 +12,7 @@ import {
     IonRow
 } from "@ionic/react";
 import "./Page2.css";
-import {arrowBack, arrowForward} from "ionicons/icons"; // Import the CSS file
+import {arrowForward} from "ionicons/icons";
 
 const Page2: React.FC = () => {
     return (
@@ -45,31 +45,33 @@ const Page2: React.FC = () => {
                                 <IonCardContent style={{fontSize: '1.5rem'}}>
                                     <ul>
                                         <li>Fragen stellen</li>
-                                        <li>vertrauen
-                                        </li>
-                                        <li>Umgang Lego</li>
+                                        <li>vertrauen</li>
+                                        <li>gleichzeitig bauen</li>
                                     </ul>
                                 </IonCardContent>
                             </IonCard>
                         </IonCol>
                     </IonRow>
+                    <IonRow>
+                        <IonCol>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    justifyContent: "flex-end"
+                                }}
+                            >
+                                <IonButton routerLink="/phase1/page3"
+                                           style={{
+                                               fontSize: "1.5rem",
+                                               marginRight: "16px"
+                                           }}>
+                                    <IonIcon slot="icon-only"
+                                             icon={arrowForward}/>
+                                </IonButton>
+                            </div>
+                        </IonCol>
+                    </IonRow>
                 </IonGrid>
-                <div className="bottom-buttons-container">
-                    <IonButton
-                        routerLink="/phase1/page1"
-                        routerDirection="back"
-                        fill="outline"
-                        style={{fontSize: "1.5rem"}}
-                    >
-                        <IonIcon slot="icon-only" icon={arrowBack}/>
-                    </IonButton>
-                    <IonButton
-                        routerLink="/phase1/page3"
-                        style={{fontSize: "1.5rem"}}
-                    >
-                        <IonIcon slot="icon-only" icon={arrowForward}/>
-                    </IonButton>
-                </div>
             </IonContent>
         </IonPage>
     );

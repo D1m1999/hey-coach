@@ -12,7 +12,7 @@ import {
     IonRow
 } from "@ionic/react";
 import "./Page1.css";
-import {arrowBack, arrowForward} from "ionicons/icons";
+import {arrowForward} from "ionicons/icons";
 
 const Page1: React.FC = () => {
     return (
@@ -88,23 +88,26 @@ const Page1: React.FC = () => {
                             </IonCard>
                         </IonCol>
                     </IonRow>
+                    <IonRow>
+                        <IonCol>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    justifyContent: "flex-end"
+                                }}
+                            >
+                                <IonButton routerLink="/phase1/page2"
+                                           style={{
+                                               fontSize: "1.5rem",
+                                               marginRight: "16px"
+                                           }}>
+                                    <IonIcon slot="icon-only"
+                                             icon={arrowForward}/>
+                                </IonButton>
+                            </div>
+                        </IonCol>
+                    </IonRow>
                 </IonGrid>
-                <div className="bottom-buttons-container">
-                    <IonButton
-                        routerLink="/home"
-                        routerDirection="back"
-                        fill="outline"
-                        style={{fontSize: "1.5rem"}}
-                    >
-                        <IonIcon slot="icon-only" icon={arrowBack}/>
-                    </IonButton>
-                    <IonButton
-                        routerLink="/phase1/page2"
-                        style={{fontSize: "1.5rem"}}
-                    >
-                        <IonIcon slot="icon-only" icon={arrowForward}/>
-                    </IonButton>
-                </div>
             </IonContent>
         </IonPage>
     );

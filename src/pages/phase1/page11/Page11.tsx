@@ -13,7 +13,6 @@ import {
 import {arrowForward} from "ionicons/icons";
 
 const Page11: React.FC = () => {
-    // Inline styles for the flex container and card stretching
     const colStyle: React.CSSProperties = {
         display: "flex",
         flexDirection: "column"
@@ -46,14 +45,17 @@ const Page11: React.FC = () => {
                     </IonRow>
                     <IonRow>
                         <IonCol>
-                            <div style={{
-                                display: 'flex',
-                                justifyContent: "flex-end"
-                            }}>
-                                <IonButton
-                                    routerLink="/phase1/page12"
-                                    style={{fontSize: '1.5rem'}}
-                                >
+                            <div
+                                style={{
+                                    display: "flex",
+                                    justifyContent: "flex-end"
+                                }}
+                            >
+                                <IonButton routerLink="/phase1/page12"
+                                           style={{
+                                               fontSize: "1.5rem",
+                                               marginRight: "16px"
+                                           }}>
                                     <IonIcon slot="icon-only"
                                              icon={arrowForward}/>
                                 </IonButton>

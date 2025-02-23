@@ -68,14 +68,17 @@ const Page10: React.FC = () => {
                     </IonRow>
                     <IonRow>
                         <IonCol>
-                            <div style={{
-                                display: 'flex',
-                                justifyContent: "flex-end"
-                            }}>
-                                <IonButton
-                                    routerLink="/phase1/page11"
-                                    style={{fontSize: '1.5rem'}}
-                                >
+                            <div
+                                style={{
+                                    display: "flex",
+                                    justifyContent: "flex-end"
+                                }}
+                            >
+                                <IonButton routerLink="/phase1/page11"
+                                           style={{
+                                               fontSize: "1.5rem",
+                                               marginRight: "16px"
+                                           }}>
                                     <IonIcon slot="icon-only"
                                              icon={arrowForward}/>
                                 </IonButton>

@@ -1,15 +1,12 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
 import {
-    IonButton,
     IonCard,
     IonCardHeader,
     IonCardTitle,
     IonContent,
-    IonIcon,
     IonPage
 } from '@ionic/react';
-import {arrowBack} from 'ionicons/icons';
 import {useCoaching} from "../../../common/CoachingContext";
 
 const Page3: React.FC = () => {
@@ -34,7 +31,6 @@ const Page3: React.FC = () => {
                         justifyContent: 'center'
                     }}
                 >
-                    {/* Card for "Aktuelles Coaching" */}
                     <IonCard
                         button
                         onClick={() => handleNavigation('aktuelles')}
@@ -48,7 +44,6 @@ const Page3: React.FC = () => {
                         </IonCardHeader>
                     </IonCard>
 
-                    {/* Card for "Neues Coaching" */}
                     <IonCard
                         button
                         onClick={() => handleNavigation('neues')}
@@ -61,17 +56,6 @@ const Page3: React.FC = () => {
                             </IonCardTitle>
                         </IonCardHeader>
                     </IonCard>
-
-                    <div style={{display: 'flex'}}>
-                        <IonButton
-                            routerLink="/phase1/page2"
-                            routerDirection="back"
-                            fill="outline"
-                            style={{fontSize: '1.5rem'}}
-                        >
-                            <IonIcon slot="icon-only" icon={arrowBack}/>
-                        </IonButton>
-                    </div>
                 </div>
             </IonContent>
         </IonPage>

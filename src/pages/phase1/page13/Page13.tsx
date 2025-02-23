@@ -11,7 +11,6 @@ import {
 } from "@ionic/react";
 
 const Page13: React.FC = () => {
-    // Inline styles for the flex container and card stretching
     const colStyle: React.CSSProperties = {
         display: "flex",
         flexDirection: "column"

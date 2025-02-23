@@ -9,7 +9,7 @@ const Page9: React.FC = () => {
                 className="lightblue-background"
                 style={{
                     display: "flex",
-                    alignItems: "center" // Centers content vertically
+                    alignItems: "center"
                 }}
             >
                 <div style={{

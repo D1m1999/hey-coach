@@ -29,13 +29,11 @@ interface CoachingProviderProps {
 }
 
 export const CoachingProvider: React.FC<CoachingProviderProps> = ({children}) => {
-    // Try to retrieve the coaching type from local storage
     const storedType = localStorage.getItem('coachingType');
     const initialType: CoachingType = (storedType === 'aktuelles' || storedType === 'neues') ? storedType : null;
 
     const [coachingType, setCoachingType] = useState<CoachingType>(initialType);
 
-    // Whenever coachingType changes, update local storage accordingly.
     useEffect(() => {
         if (coachingType) {
             localStorage.setItem('coachingType', coachingType);

@@ -21,7 +21,7 @@ const Page14: React.FC = () => {
                 }}>
                     <IonButton
                         routerLink="/phase1/page6"
-                        style={{fontSize: '1.5rem'}}
+                        style={{fontSize: '1.5rem', marginRight: "16px"}}
                     >
                         <IonIcon slot="icon-only"
                                  icon={arrowForward}/>

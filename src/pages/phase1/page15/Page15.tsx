@@ -1,14 +1,12 @@
 import React from 'react';
 import {
-    IonButton,
     IonCard,
     IonCardHeader,
     IonCardTitle,
     IonContent,
-    IonIcon,
     IonPage
 } from '@ionic/react';
-import {arrowBack} from 'ionicons/icons';
+
 
 const Page15: React.FC = () => {
 
@@ -44,16 +42,6 @@ const Page15: React.FC = () => {
                                 nicht</IonCardTitle>
                         </IonCardHeader>
                     </IonCard>
-                    <div style={{display: 'flex'}}>
-                        <IonButton
-                            routerLink="/phase1/page4"
-                            routerDirection="back"
-                            fill="outline"
-                            style={{fontSize: '1.5rem'}}
-                        >
-                            <IonIcon slot="icon-only" icon={arrowBack}/>
-                        </IonButton>
-                    </div>
                 </div>
             </IonContent>
         </IonPage>

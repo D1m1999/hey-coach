@@ -1,15 +1,11 @@
-// Page15.tsx
 import React from 'react';
 import {
-    IonButton,
     IonCard,
     IonCardHeader,
     IonCardTitle,
     IonContent,
-    IonIcon,
     IonPage
 } from '@ionic/react';
-import {arrowBack} from 'ionicons/icons';
 
 const Page6: React.FC = () => {
 
@@ -22,7 +18,6 @@ const Page6: React.FC = () => {
                     </p>
                 </div>
                 <div style={{padding: '0 1rem'}}>
-                    {/* "Ja" card navigates conditionally */}
                     <IonCard
                         button
                         routerLink="/phase1/page7"
@@ -35,7 +30,6 @@ const Page6: React.FC = () => {
                         </IonCardHeader>
                     </IonCard>
 
-                    {/* "Nein" card navigates to a fixed route */}
                     <IonCard
                         button
                         routerLink="/phase1/page8"
@@ -47,17 +41,6 @@ const Page6: React.FC = () => {
                                 style={{textAlign: 'center'}}>Nein</IonCardTitle>
                         </IonCardHeader>
                     </IonCard>
-
-                    <div style={{display: 'flex'}}>
-                        <IonButton
-                            routerLink="/phase1/page4"
-                            routerDirection="back"
-                            fill="outline"
-                            style={{fontSize: '1.5rem'}}
-                        >
-                            <IonIcon slot="icon-only" icon={arrowBack}/>
-                        </IonButton>
-                    </div>
                 </div>
             </IonContent>
         </IonPage>

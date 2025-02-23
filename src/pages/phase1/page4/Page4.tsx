@@ -1,22 +1,18 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
 import {
-    IonButton,
     IonCard,
     IonCardHeader,
     IonCardTitle,
     IonContent,
-    IonIcon,
     IonPage
 } from '@ionic/react';
-import {arrowBack} from 'ionicons/icons';
 import {useCoaching} from "../../../common/CoachingContext";
 
 const Page4: React.FC = () => {
     const history = useHistory();
     const {coachingType} = useCoaching();
 
-    // Determine the destination for the "Ja" card based on the coaching type.
     const jaRoute =
         coachingType === 'aktuelles'
             ? '/phase1/page15'
@@ -33,7 +29,6 @@ const Page4: React.FC = () => {
                     </p>
                 </div>
                 <div style={{padding: '0 1rem'}}>
-                    {/* "Ja" card navigates conditionally */}
                     <IonCard
                         button
                         onClick={() => history.push(jaRoute)}
@@ -46,7 +41,6 @@ const Page4: React.FC = () => {
                         </IonCardHeader>
                     </IonCard>
 
-                    {/* "Nein" card navigates to a fixed route */}
                     <IonCard
                         button
                         routerLink="/phase1/page5"
@@ -58,17 +52,6 @@ const Page4: React.FC = () => {
                                 style={{textAlign: 'center'}}>Nein</IonCardTitle>
                         </IonCardHeader>
                     </IonCard>
-
-                    <div style={{display: 'flex'}}>
-                        <IonButton
-                            routerLink="/phase1/page3"
-                            routerDirection="back"
-                            fill="outline"
-                            style={{fontSize: '1.5rem'}}
-                        >
-                            <IonIcon slot="icon-only" icon={arrowBack}/>
-                        </IonButton>
-                    </div>
                 </div>
             </IonContent>
         </IonPage>
