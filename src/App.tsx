@@ -1,19 +1,7 @@
-import { Redirect, Route } from 'react-router-dom';
-import {
-  IonApp,
-  IonIcon,
-  IonLabel,
-  IonRouterOutlet,
-  IonTabBar,
-  IonTabButton,
-  IonTabs,
-  setupIonicReact
-} from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+import {Redirect, Route} from 'react-router-dom';
+import {IonApp, IonRouterOutlet, setupIonicReact} from '@ionic/react';
+import {IonReactRouter} from '@ionic/react-router';
+import Home from './pages/home/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -37,51 +25,94 @@ import '@ionic/react/css/display.css';
  * For more info, please see:
  * https://ionicframework.com/docs/theming/dark-mode
  */
-
 /* import '@ionic/react/css/palettes/dark.always.css'; */
 /* import '@ionic/react/css/palettes/dark.class.css'; */
-import '@ionic/react/css/palettes/dark.system.css';
-
+/* import '@ionic/react/css/palettes/dark.system.css'; */
 /* Theme variables */
 import './theme/variables.css';
+import React from "react";
+import Page1 from "./pages/phase1/page1/Page1";
+import Page2 from "./pages/phase1/page2/Page2";
+import Page3 from "./pages/phase1/page3/Page3";
+import Page4 from "./pages/phase1/page4/Page4";
+import Page5 from "./pages/phase1/page5/Page5";
+import Page6 from './pages/phase1/page6/Page6';
+import Page7 from "./pages/phase1/page7/Page7";
+import Page8 from "./pages/phase1/page8/Page8";
+import Page9 from "./pages/phase1/page9/Page9";
+import {CoachingProvider} from "./common/CoachingContext";
+import Page10 from "./pages/phase1/page10/Page10";
+import Page11 from "./pages/phase1/page11/Page11";
+import Page12 from "./pages/phase1/page12/Page12";
+import Page14 from "./pages/phase1/page14/Page14";
+import Page13 from "./pages/phase1/page13/Page13";
+import Page15 from "./pages/phase1/page15/Page15";
 
-setupIonicReact();
+setupIonicReact({
+    mode: "ios"
+});
 
 const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonTabs>
-        <IonRouterOutlet>
-          <Route exact path="/tab1">
-            <Tab1 />
-          </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
-          </Route>
-          <Route path="/tab3">
-            <Tab3 />
-          </Route>
-          <Route exact path="/">
-            <Redirect to="/tab1" />
-          </Route>
-        </IonRouterOutlet>
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon aria-hidden="true" icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon aria-hidden="true" icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Tab 3</IonLabel>
-          </IonTabButton>
-        </IonTabBar>
-      </IonTabs>
-    </IonReactRouter>
-  </IonApp>
+    <IonApp>
+        <CoachingProvider>
+            <IonReactRouter>
+                <IonRouterOutlet>
+                    <Route path="/" exact={true}>
+                        <Redirect to="/home"/>
+                    </Route>
+                    <Route path="/home" exact={true}>
+                        <Home/>
+                    </Route>
+                    <Route path="/phase1/page1">
+                        <Page1></Page1>
+                    </Route>
+                    <Route path="/phase1/page2">
+                        <Page2></Page2>
+                    </Route>
+                    <Route path="/phase1/page3">
+                        <Page3></Page3>
+                    </Route>
+                    <Route path="/phase1/page4">
+                        <Page4></Page4>
+                    </Route>
+                    <Route path="/phase1/page5">
+                        <Page5></Page5>
+                    </Route>
+                    <Route path="/phase1/page6">
+                        <Page6></Page6>
+                    </Route>
+                    <Route path="/phase1/page7">
+                        <Page7></Page7>
+                    </Route>
+                    <Route path="/phase1/page8">
+                        <Page8></Page8>
+                    </Route>
+                    <Route path="/phase1/page9">
+                        <Page9></Page9>
+                    </Route>
+                    <Route path="/phase1/page10">
+                        <Page10></Page10>
+                    </Route>
+                    <Route path="/phase1/page11">
+                        <Page11></Page11>
+                    </Route>
+                    <Route path="/phase1/page12">
+                        <Page12></Page12>
+                    </Route>
+                    <Route path="/phase1/page13">
+                        <Page13></Page13>
+                    </Route>
+                    <Route path="/phase1/page14">
+                        <Page14></Page14>
+                    </Route>
+                    <Route path="/phase1/page15">
+                        <Page15></Page15>
+                    </Route>
+                </IonRouterOutlet>
+            </IonReactRouter>
+        </CoachingProvider>
+    </IonApp>
 );
+
 
 export default App;
