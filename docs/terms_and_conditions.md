@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Datenschutzerklärung"
+permalink: /terms_and_conditions/
+---
+
 # Datenschutzerklärung
 
 ## 1. Verantwortliche Stelle
