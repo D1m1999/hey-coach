@@ -59,7 +59,24 @@ const Page8: React.FC = () => {
                                                 alt="Image 4"/>
                                         </IonCol>
                                     </IonRow>
-                                    <IonRow className="content-list">
+                                    <IonRow className="content-list hidden-lg">
+                                        <IonCol size="6">
+                                            <ul>
+                                                <li>Angst vor Fehler</li>
+                                                <li>Abschreiben</li>
+                                                <li>Abgelenkt sein</li>
+                                                <li>Unkonzentriert sein</li>
+                                            </ul>
+                                        </IonCol>
+                                        <IonCol size="6">
+                                            <ul>
+                                                <li>Eigene Meinung</li>
+                                                <li>Arbeitsplatz</li>
+                                                <li>Streit mit jemandem</li>
+                                            </ul>
+                                        </IonCol>
+                                    </IonRow>
+                                    <IonRow className="content-list hidden-sm">
                                         <IonCol size="4">
                                             <ul>
                                                 <li>Angst vor Fehler</li>

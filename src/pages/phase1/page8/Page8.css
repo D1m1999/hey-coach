@@ -32,7 +32,7 @@
 }
 
 /* Smaller phones */
-@media (max-width: 768px) {
+@media (max-width: 732px) {
     .main-title {
         font-size: 1.6rem;
     }
@@ -44,5 +44,26 @@
 
     .content-list {
         font-size: 0.8rem;
+    }
+
+    .content-list ion-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .hidden-sm {
+        display: none;
+    }
+}
+
+/* For larger screens we'll use the Ionic's built-in responsive grid */
+@media (min-width: 733px) {
+    .content-list ion-col {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+
+    .hidden-lg {
+        display: none;
     }
 }
