@@ -1,0 +1,48 @@
+.title-container {
+    display: flex;
+    align-items: center;
+    margin-inline-start: 16px;
+    margin-top: 24px;
+}
+
+.lego-image {
+    width: 11rem;
+    height: 11rem;
+    margin-right: 1rem;
+    border-radius: 18px;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.content-list {
+    font-size: 1.3rem;
+}
+
+.nav-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-button {
+    font-size: 1.5rem;
+    margin-right: 16px;
+}
+
+/* Smaller phones */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 1.6rem;
+    }
+
+    .lego-image {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .content-list {
+        font-size: 0.8rem;
+    }
+}

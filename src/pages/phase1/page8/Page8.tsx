@@ -11,6 +11,7 @@ import {
     IonRow
 } from "@ionic/react";
 import {arrowForward} from "ionicons/icons";
+import './Page8.css';
 
 const Page8: React.FC = () => {
     return (
@@ -19,27 +20,13 @@ const Page8: React.FC = () => {
                 <IonGrid>
                     <IonRow>
                         <IonCol>
-                            <div
-                                style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    marginInlineStart: "16px",
-                                    marginTop: "24px"
-                                }}>
+                            <div className="title-container">
                                 <img
                                     src="/images/Lego-Stein.webp"
                                     alt="Icon 2"
-                                    style={{
-                                        width: "11rem",
-                                        height: "11rem",
-                                        marginRight: "1rem",
-                                        borderRadius: "18px"
-                                    }}
+                                    className="lego-image"
                                 />
-                                <p style={{
-                                    fontSize: "4rem",
-                                    margin: 0,
-                                }}>
+                                <p className="main-title">
                                     Baue eine bestimmte Situation nach.
                                 </p>
                             </div>
@@ -72,7 +59,7 @@ const Page8: React.FC = () => {
                                                 alt="Image 4"/>
                                         </IonCol>
                                     </IonRow>
-                                    <IonRow style={{fontSize: '1.5rem'}}>
+                                    <IonRow className="content-list">
                                         <IonCol size="4">
                                             <ul>
                                                 <li>Angst vor Fehler</li>
@@ -99,17 +86,9 @@ const Page8: React.FC = () => {
                     </IonRow>
                     <IonRow>
                         <IonCol>
-                            <div
-                                style={{
-                                    display: "flex",
-                                    justifyContent: "flex-end"
-                                }}
-                            >
+                            <div className="nav-button-container">
                                 <IonButton routerLink="/phase1/page6"
-                                           style={{
-                                               fontSize: "1.5rem",
-                                               marginRight: "16px"
-                                           }}>
+                                           className="nav-button">
                                     <IonIcon slot="icon-only"
                                              icon={arrowForward}/>
                                 </IonButton>
