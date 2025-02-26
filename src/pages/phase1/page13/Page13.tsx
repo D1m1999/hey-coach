@@ -52,7 +52,7 @@ const Page13: React.FC = () => {
                             <IonCard style={cardStyle}
                                      className="light-orange-card">
                                 <IonCardHeader style={{textAlign: "center"}}>
-                                    <h1 className="title-text">was wären
+                                    <h1 className="title-text">Was wären
                                         Hürden?</h1>
                                 </IonCardHeader>
                             </IonCard>
@@ -62,7 +62,7 @@ const Page13: React.FC = () => {
                                      className="light-orange-card">
                                 <IonCardHeader style={{textAlign: "center"}}>
                                     <h1 className="title-text">
-                                        was hat funktioniert?
+                                        Was hat funktioniert?
                                     </h1>
                                 </IonCardHeader>
                             </IonCard>
@@ -84,7 +84,7 @@ const Page13: React.FC = () => {
                         <IonCol>
                             <IonCard
                                 button
-                                routerLink="/phase1/page10"
+                                routerLink="/phase1/page6"
                                 className="light-orange-card"
                                 style={{
                                     marginBottom: '1rem',

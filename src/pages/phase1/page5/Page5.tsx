@@ -18,9 +18,6 @@ const Page5: React.FC = () => {
         flexDirection: "column"
     };
 
-    const cardStyle: React.CSSProperties = {
-        flex: 1
-    };
 
     return (
         <IonPage>
@@ -29,7 +26,7 @@ const Page5: React.FC = () => {
                     <IonRow>
                         <IonCol sizeMd="6" offsetMd="3"
                                 style={colStyle}>
-                            <IonCard style={cardStyle}
+                            <IonCard style={{flex: "1"}}
                                      className="light-orange-card">
                                 <IonCardHeader style={{textAlign: "center"}}>
                                     <h1 className="title-text">Wie fühlst du
@@ -40,7 +37,7 @@ const Page5: React.FC = () => {
                     </IonRow>
                     <IonRow>
                         <IonCol style={colStyle}>
-                            <IonCard style={cardStyle}
+                            <IonCard style={{flex: "1"}}
                                      className="light-orange-card">
                                 <IonCardHeader style={{textAlign: "center"}}>
                                     <h1 className="title-text">Beschäftigt dich
@@ -49,12 +46,12 @@ const Page5: React.FC = () => {
                             </IonCard>
                         </IonCol>
                         <IonCol style={colStyle}>
-                            <IonCard style={cardStyle}
+                            <IonCard style={{flex: "1"}}
                                      className="light-orange-card">
                                 <IonCardHeader style={{textAlign: "center"}}>
                                     <h1 className="title-text">
                                         Welches Wetter passt zu deinem Gefühl?
-                                        (Stürmisch, Sonnig, Schnee)
+                                        (Stürmisch, Sonnig, Schnee, ...)
                                     </h1>
                                 </IonCardHeader>
                             </IonCard>

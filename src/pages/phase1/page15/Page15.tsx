@@ -15,7 +15,7 @@ const Page15: React.FC = () => {
             <IonContent fullscreen className="lightblue-background">
                 <div style={{textAlign: 'center', padding: '2rem'}}>
                     <p className="title-text" style={{margin: '1rem 0'}}>
-                        Haben wir noch ein angefangenes Ziel?
+                        Haben wir ein angefangenes Ziel?
                     </p>
                 </div>
                 <div style={{padding: '0 1rem'}}>

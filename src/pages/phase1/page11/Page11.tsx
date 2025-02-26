@@ -27,7 +27,7 @@ const Page11: React.FC = () => {
             <IonContent fullscreen className="lightblue-background">
                 <div style={{textAlign: 'center', padding: '2rem'}}>
                     <p style={{fontSize: '2.5rem', margin: '1rem 0'}}>
-                        Der Coach schreibt das Ziel in sein Heft:
+                        Der Coachee schreibt das Ziel in sein Heft:
                     </p>
                 </div>
                 <IonGrid>
@@ -37,7 +37,7 @@ const Page11: React.FC = () => {
                             <IonCard style={cardStyle}
                                      className="light-orange-card">
                                 <IonCardHeader style={{textAlign: "center"}}>
-                                    <h1 className="title-text">Bis...<br/>werde
+                                    <h1 className="title-text">Bis... werde
                                         ich...</h1>
                                 </IonCardHeader>
                             </IonCard>

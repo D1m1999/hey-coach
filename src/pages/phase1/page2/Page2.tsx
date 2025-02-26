@@ -28,7 +28,7 @@ const Page2: React.FC = () => {
                                 </IonCardHeader>
                                 <IonCardContent style={{fontSize: '1.5rem'}}>
                                     <ul>
-                                        <li>danke darf ich dich begleiten</li>
+                                        <li>"Danke darf ich dich begleiten"</li>
                                         <li>Schweigepflicht (Coach, Coachee,
                                             Lehrpersonen)
                                         </li>
@@ -40,13 +40,13 @@ const Page2: React.FC = () => {
                         <IonCol className="card-col">
                             <IonCard className="light-orange-card">
                                 <IonCardHeader>
-                                    <h1 className="title-text">merke dir</h1>
+                                    <h1 className="title-text">Merke dir</h1>
                                 </IonCardHeader>
                                 <IonCardContent style={{fontSize: '1.5rem'}}>
                                     <ul>
                                         <li>Fragen stellen</li>
-                                        <li>vertrauen</li>
-                                        <li>gleichzeitig bauen</li>
+                                        <li>Vertrauen</li>
+                                        <li>Gleichzeitig bauen</li>
                                     </ul>
                                 </IonCardContent>
                             </IonCard>

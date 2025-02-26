@@ -38,7 +38,7 @@ const Page10: React.FC = () => {
                             <IonCard style={cardStyle}
                                      className="light-orange-card">
                                 <IonCardHeader style={{textAlign: "center"}}>
-                                    <h1 className="title-text">kennt der Coachee
+                                    <h1 className="title-text">Kennt der Coachee
                                         seine Stärken?</h1>
                                 </IonCardHeader>
                             </IonCard>
@@ -49,7 +49,7 @@ const Page10: React.FC = () => {
                             <IonCard style={cardStyle}
                                      className="light-orange-card">
                                 <IonCardHeader style={{textAlign: "center"}}>
-                                    <h1 className="title-text">kennt der Coachee
+                                    <h1 className="title-text">Kennt der Coachee
                                         seine Möglichkeiten?</h1>
                                 </IonCardHeader>
                             </IonCard>
