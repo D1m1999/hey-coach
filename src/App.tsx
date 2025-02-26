@@ -30,6 +30,7 @@ import '@ionic/react/css/display.css';
 /* import '@ionic/react/css/palettes/dark.system.css'; */
 /* Theme variables */
 import './theme/variables.css';
+import './theme/global.css';
 import React from "react";
 import Page1 from "./pages/phase1/page1/Page1";
 import Page2 from "./pages/phase1/page2/Page2";

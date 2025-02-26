@@ -1,0 +1,28 @@
+/* Global styles and utility classes */
+
+/* Custom utility classes */
+.lightblue-background {
+    --background: #89cbe3;
+}
+
+.light-orange-card {
+    --background: #ffc58b; /* light orange */
+}
+
+/* Font definitions */
+@font-face {
+    font-family: "Nunito";
+    src: url("/resources/font/nunito/Nunito-VariableFont_wght.ttf");
+}
+
+/* Global font settings */
+* {
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: bold;
+}
+
+/* Typography classes */
+.title-text {
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+} 

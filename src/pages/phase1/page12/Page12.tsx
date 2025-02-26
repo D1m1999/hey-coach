@@ -10,13 +10,14 @@ import {
     IonRow
 } from "@ionic/react";
 import {home} from "ionicons/icons";
+import './Page12.css';
 
 const Page12: React.FC = () => {
     return (
         <IonPage>
             <IonContent fullscreen className="lightblue-background">
-                <div style={{textAlign: 'center', padding: '2rem'}}>
-                    <p style={{fontSize: '5rem', margin: '1rem 0'}}>
+                <div className="coach-message">
+                    <p>
                         Hey du super Coach, motiviere dein Coachee. <br/> Mach
                         ihm/ihr
                         Mut.
@@ -28,18 +29,13 @@ const Page12: React.FC = () => {
                             <IonImg
                                 src="/images/icon.png"
                                 alt="Hey Coach Icon"
-                                style={{width: "192px", height: "192px"}}
+                                className="icon"
                             />
                         </IonCol>
                     </IonRow>
                     <IonRow>
                         <IonCol>
-                            <div
-                                style={{
-                                    display: "flex",
-                                    justifyContent: "flex-end"
-                                }}
-                            >
+                            <div className="home-button-container">
                                 <IonButton routerLink="/home"
                                            style={{
                                                fontSize: "1.5rem",

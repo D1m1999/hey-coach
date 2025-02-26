@@ -1,0 +1,47 @@
+.coach-message {
+    font-size: 5rem;
+    margin: 1rem 0;
+    text-align: center;
+    padding: 2rem;
+}
+
+.icon-container {
+    text-align: center;
+}
+
+.icon {
+    width: 192px;
+    height: 192px;
+}
+
+.home-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Media query for iPhone and smaller devices */
+@media screen and (max-width: 767px) {
+    .coach-message {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+
+    .home-button-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Media query for iPhone in landscape */
+@media screen and (max-height: 460px) and (orientation: landscape) {
+    .coach-message {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .icon {
+        width: 96px;
+        height: 96px;
+    }
+} 
